@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>CS Program</title>
 </head>
 <body>
-        <div><object data="csProgram.md" type="text/html"></object></div>
+        <div id="content"></div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+                var content = marked('csProgram.md');
+                document.getElementById('content').innerHTML = content;
+        </script>
 </body>
 </html>
