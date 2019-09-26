@@ -1,3 +1,0 @@
-# mykindo.github.io
-
-
