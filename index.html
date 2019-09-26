@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
         <title>CS Program</title>
+        <style>
+	.markdown-body {
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+</style>
 </head>
 <body>
-        <div id="content"></div>
+        <div class="markdown-body" id="content"></div>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script>
                 document.getElementById('content').innerHTML = marked('# Cybersecurity Program\n## Main objectives: secure the company, secure the product\n0. **Introduce new cybersecurity unit to the business**\n1. **Observe current business cybersecurity posture**\n- Examine business operating platform security layers, check indicators of compromise, connect to data sources (do initial/emergency prioritization)\n- Identify data and process flows, conditions, key triggers and interested parties (setup communication channels and prepare for modelling)\n- Define areas of concern based on business operating platform, mission and business objectives, stakeholder protection needs, security requirements and threat landscape (do high-level prioritization)\n- Estimate potential consequences of cybersecurity incidents (connect with operational planning)\n- Consolidate indicators and chain data sources for automated analytics and fast insights\n- Conclude step 1 with initial baseline profile as a point for further establishment of cybersecurity framework\n2. **Orient company leadership, operational and business units in order to define joint program to increase security of business assets and reduce attack surface**\n- Describe cybersecurity risks (setup risk register and prepare to establish risk management framework)\n- Involve interested parties to complete holistic analysis and achieve comprehensive view for decision execution\n- Confirm and prepare projects, provide implicit guidance and oversight framework (including reference points)\n- Engage in business projects, provide technological and organizational support and assure org infrastructure regular updates\n- Provide training, rise awareness internally and for the clients (security external communications)\n- Initiate cultural shift positively reinforcing cybersecurity\n3. **Decide on a course of action**\n- Model decisions using business rules and analytics (e.g. threat intelligence) paving the way for continuous automation, quick enhancements and scalability of cybersecurity program\n- Approve execution, review previous decisions and improve the process\n4. **Take action**\n- Execute decisions as soon as possible or explicitly substantiate delays for fast insights and putting compensating controls in place (e.g. asset management, business continuity, change and configuration management, identity and access management, etc.)\n- Build automated security issue triage and management, proactive vulnerability scanning\n- Develop and implement a secure software development lifecycle (S-SDLC)\n- Conduct security research and develop security practices based on internal landscape and best external cases (including international standards and business exercises)\n- Grow Security Department headcount to ensure adequate staffing support for security releases, detection and response for security incidents, running security program and contributing to the product');
