@@ -1,25 +1,28 @@
 name: Advanced Usage
-
-on: push
-
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: create file list
         id: files_list
         run: |
-          echo "Lorem ipsum" > lorem_1.md  # create two example files
-          echo "dolor sit amet" > lorem_2.md
-          mkdir output  # create output dir
+          echo "Lorem ipsum" > lorem.md
+          mkdir output
           # this will also include README.md
           echo "::set-output name=files::$(printf '"%s" ' *.md)"
 
-      - uses: docker://pandoc/latex:2.9
+      - uses: docker://pandoc/core:2.9
         with:
-          args: --output=output/result.pdf ${{ steps.files_list.outputs.files }}
+          args: --output=output/result.html ${{ steps.files_list.outputs.files }}
           
       - uses: actions/upload-artifact@master
         with:
