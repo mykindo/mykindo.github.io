@@ -31,5 +31,5 @@ jobs:
         with:
           args: >-
               --standalone
-              --output=file.pdf
+              --output=file.doc
               file.md
