@@ -32,5 +32,4 @@ jobs:
             args: >-
               "--standalone"
               "--output=Another-File.html"
-              "--metadata title="Another-File"
               "Another-File.md"
