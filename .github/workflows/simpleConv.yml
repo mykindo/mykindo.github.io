@@ -34,7 +34,6 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
-              #--standalone
               --output=output/file.docx ${{ steps.files_list.outputs.files }}
               file.md
               
