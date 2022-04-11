@@ -34,7 +34,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      # Added by mykindo to convert documents in the repository
-      - name: Pandoc Document Converter
-        uses: maxheld83/pandoc-action@v2
