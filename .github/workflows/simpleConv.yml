@@ -31,5 +31,5 @@ jobs:
         with:
             args: >-
               --standalone
-              --output=Another_File.html
-              Another_File.md
+              --output=file.html
+              file.md
