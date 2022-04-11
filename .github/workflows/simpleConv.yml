@@ -33,3 +33,8 @@ jobs:
               --standalone
               --output=file.docx
               file.md
+              
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: file.docx
