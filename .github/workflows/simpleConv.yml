@@ -26,17 +26,19 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: create output catalog
-        id: files
-        run: mkdir output  # create output dir
+        id: files_list
+        run: |
+          mkdir output  # create output dir
+          echo "::set-output name=files::$(echo printf '"%s" ' *.md)"
       
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
-              --standalone
-              --output=output/file.docx
+              #--standalone
+              --output=output/file.docx ${{ steps.files_list.outputs.files }}
               file.md
               
       - uses: actions/upload-artifact@master
         with:
-          name: output/file.docx
+          name: output
           path: output
