@@ -31,5 +31,5 @@ jobs:
         with:
           args: >-
               --standalone
-              --output=file.doc
+              --output=file.docx
               file.md
