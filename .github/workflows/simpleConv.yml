@@ -27,8 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a 2.9 version of Pandoc
-        run: docker://pandoc/core:2.9
-          with:
+        uses: docker://pandoc/core:2.9
+        with:
             args: >-
               "--standalone"
               "--output=Another-File.html"
