@@ -30,6 +30,6 @@ jobs:
         uses: docker://pandoc/core:2.9
         with:
             args: >-
-              "--standalone"
-              "--output=Another-File.html"
-              "Another-File.md"
+              --standalone
+              --output=Another_File.html
+              Another_File.md
