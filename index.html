@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
-        <title>CS Program</title>
+        <title>MYKINDO</title>
         <style>
 	.markdown-body {
 		box-sizing: border-box;
@@ -19,9 +19,56 @@
 			padding: 15px;
 		}
 	}
-</style>
+		
+	.header {
+  		position: relative;
+  		height: 500px;
+  		margin-top: 40px;
+  		margin-bottom: 40px;
+  		background-image: url('../images/Frame-20-05-2024-03-05-22.jpeg');
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		background-position: center;
+	}
+
+	.title {
+  		position: absolute;
+  		width: 100%;
+  		top: 40%;
+  		text-align: center;
+  		font-size: 44px;
+	}
+
+	.tab {
+  		position: absolute;
+  		bottom: 30%;
+  		right: 10%;
+
+  		width: 70%;
+  		border-radius: 18px;
+  		padding: 20px;
+
+  		background-color: transparent; 
+  		backdrop-filter: blur(3px);
+  		-webkit-backdrop-filter: blur(3px);
+  		background-image: linear-gradient(
+    			120deg,
+    			rgba(255, 255, 255, 0.2),
+    			rgba(0, 0 ,0, 0.1)
+  		);  
+	}              
+
+		
+	</style>
 </head>
 <body>
+	<div class="grid-container-l0">
+		<div class="header grid-item-l0 grid-container-l1">
+			<h1 class="title grid-item-l1">MYKINDO</h1>
+			<div class="tab grif-item-l1">CONTENT</div>
+		</div>
+	</div>
+
         <div class="markdown-body" id="content"></div>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.3/purify.min.js"></script>
