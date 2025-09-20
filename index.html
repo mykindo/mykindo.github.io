@@ -96,18 +96,42 @@
   		font-weight: 400;
   		font-style: normal;
 	}
+
+	ul {
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		padding-inline-start: 40px;
+	}
+	.ul_subnav {
+		flex-wrap: wrap;
+		align-items: center;
+		margin-left: -20px;
+		padding: 0;
+		list-style: none;
+		justify-content: center;
+		display: inline-flex;
+	}
 		
 	</style>
 </head>
 <body>
 	<div class="grid-container-l0">
 		<div class="header grid-item-l0 grid-container-l1">
-			<h1 class="title grid-item-l1 noto-music-regular">MYKINDO</h1>
+			<h1 class="title grid-item-l1">MYKINDO</h1>
 			<div class="tab grif-item-l1">CONTENT</div>
 		</div>
 	</div>
 
     <div class="markdown-body" id="content"></div>
+
+	<div class="grid-container-l0">
+		<div class="grid-item-l0 grid-container-l1">
+			<ul class="ul_subnav">
+				<li>text 1</li>
+				<li>text 2</li>
+			</ul>
+		</div>
+	</div>
     
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.3/purify.min.js"></script>
