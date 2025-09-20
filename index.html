@@ -42,7 +42,6 @@
 			background-image: url(""), linear-gradient(to left top, rgb(40, 165, 245), rgb(30, 135, 240));
 		}
 		
-		
 		.markdown-body {
 			/*<!-- Layout -->*/
 			margin: 0 auto;
@@ -62,6 +61,21 @@
 				padding: 15px;
 			}
 		}
+
+		/* Grid Header */
+		.grid-container-header-l0 {
+			display: grid;
+			grid-template-rows: 1fr 2fr 1fr 1fr;
+			background-color: #EEF;
+		}
+
+		.grid-item-header-l0 {
+			background-color: #39F;
+			text-align: center;
+			margin: 5px;
+			padding: 10px;
+		}
+		/* /Grid Header */
 		
 		.header {
 			/*<!-- Layout -->*/
@@ -74,22 +88,6 @@
   			background-size: cover;
   			background-position: center;
 		}
-
-		/* Grid */
-
-		.grid-container-footer-l0 {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			background-color: #EEF;
-		}
-
-		.grid-item-footer-l0 {
-			border: 1px solid #FA003F;
-			background-color: #39F;
-			text-align: center;
-			margin: 5px;
-			padding: 10px;
-		}
 		
 		.title {
 			/*<!-- Layout -->*/
@@ -101,7 +99,6 @@
   			font-size: 48px;
 			color: #FFFFFF;
 		}
-
 		
 		.tab {
 			/*<!-- Layout -->*/
@@ -136,6 +133,23 @@
   			font-weight: 400;
   			font-style: normal;
 		}
+		
+		/* Grid Footer */
+
+		.grid-container-footer-l0 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			background-color: #EEF;
+		}
+
+		.grid-item-footer-l0 {
+			background-color: #39F;
+			text-align: center;
+			margin: 5px;
+			padding: 10px;
+		}
+
+		/* /Grid Footer */
 		
 		.ul_container {
 			/*<!-- Layout -->*/
@@ -172,18 +186,34 @@
 		.ul_subnav li {
 			padding-left: 50px;
 		}
+
+		.ul_policies li {
+			padding: 0 20px 0 20px;
+		}
 		
 	</style>
 </head>
 <body>
-	<div class="grid-container-l0">
-		<div class="header grid-item-l0 grid-container-l1">
-			<h1 class="title grid-item-l1">MYKINDO</h1>
-			<div class="tab grif-item-l1">
+	<div class="grid-container-header-l0">
+		<div class="header grid-item-header-l0 grid-container-header-l1">
+			<h1 class="title grid-item-header-l1">MYKINDO</h1>
+			<div class="tab grif-item-header-l1">
 				Your premium gateway to the underwater world. 
 				Connect with expert instructors, track your diving progress, and capture memories that last a lifetime.
 			</div>
 		</div>
+	</div>
+	<!-- Header -->
+	<div class="grid-container-header-l0">
+		<div class="grif-item-header-l0"></div>
+		<!-- Title -->
+		<h1 class="grid-item-header-l0">MYKINDO</h1>
+		<!-- Tab -->
+		<div class="grif-item-header-l0">
+			Your premium gateway to the underwater world. 
+			Connect with expert instructors, track your diving progress, and capture memories that last a lifetime.
+		</div>
+		<div class="grif-item-header-l0"></div>
 	</div>
 
     <div class="markdown-body" id="content"></div>
@@ -202,11 +232,11 @@
 			<p>Banner</p>
 		</div>
 		<!--/* Moto */-->
-		<div class="grid-item-footer-l0 grid-container-l1">
+		<div class="grid-item-footer-l0 grid-container-footer-l1">
 			<p>Start Your Adventure</p>
 		</div>
 		<!--/* Social links*/-->
-		<div class="grid-item-footer-l0 grid-container-l1 ul_container">
+		<div class="grid-item-footer-l0 grid-container-footer-l1">
 			<ul class="ul_policies">
 				<li><a href="#">Terms</a></li>
 				<li><a href="#">Privacy</a></li>
