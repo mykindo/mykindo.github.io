@@ -180,7 +180,20 @@
     <script>
         var clean = DOMPurify.sanitize(
 			'# Our Adventures\n'+
-			'## Site 1\n **Site 1 Brief description**\n- Feature 1\n- Feature 2\n- Feature 3\n- Feature 4\n **Link S1**\n## Site 2\n **Site 2 Brief description**\n- Feature 1\n- Feature 2\n- Feature 3\n- Feature 4\n **Link S2**\n');
+			'## Site 1\n'+
+			'**Site 1 Brief description**\n'+
+			'- Feature 1\n'+
+			'- Feature 2\n'+
+			'- Feature 3\n'+
+			'- Feature 4\n'+
+			'- Read more S1\n'+
+			'## Site 2\n'+
+			'**Site 2 Brief description**\n'+
+			'- Feature 1\n'+
+			'- Feature 2\n'+
+			'- Feature 3\n'+
+			'- Feature 4\n'+
+			'- Read more S1\n');
 		document.getElementById('content').innerHTML = marked.parse(clean);
 	</script>
 </body>
