@@ -14,6 +14,7 @@
 	<title>MYKINDO</title>
 	
     <style>
+		
 		* {
 			margin: 0;
 			box-sizing: border-box;
@@ -36,7 +37,6 @@
 		body {
 			/*<!-- Layout -->*/
 			display: block;
-			margin: 0;
 
 			/*<!-- Font -->*/
 			color: #fff;
@@ -58,89 +58,15 @@
 			color: rgba(255, 255, 255, 0.8);
 			text-transform: none;
 		}
-		
+
+		/*
 		@media (max-width: 767px) {
 			.markdown-body {
 				<!-- Layout -->
 				padding: 15px;
 			}
 		}
-
-		/* Grid Header */
-		.grid-container-header-l0 {
-			display: grid;
-			grid-template-rows: 1fr 2fr 1fr 1fr;
-			
-			background-image: url('images/header-img.jpg');
-			/*background-repeat: no-repeat;
-  			background-size: cover;
-  			background-position: center;*/
-		}
-
-		.grid-item-header-l0 {
-			background-color: #39F;
-			text-align: center;
-			margin: 5px;
-			padding: 10px;
-		}
-		/* /Grid Header */
-		
-		.header {
-			/*<!-- Layout -->*/
-  			position: relative;
-  			height: 580px;
-  			
-			/*<!-- Background -->*/
-  			background-image: url('images/header-img.jpg');
-  			background-repeat: no-repeat;
-  			background-size: cover;
-  			background-position: center;
-		}
-		
-		.title {
-			/*<!-- Layout -->*/
-  			position: absolute;
-  			top: 40%;
-  			text-align: center;
-			margin-bottom: 20px;
-			width: 100%;
-  			font-size: 48px;
-			color: #FFFFFF;
-		}
-		
-		.tab {
-			/*<!-- Layout -->*/
-  			position: absolute;
-  			bottom: 20%;
-  			right: 10%;
-  			width: 70%;
-  			border-radius: 18px;
-  			padding: 20px;
-			
-			/*<!-- Font -->*/
-			font-size: 24px;
-			font-weight: 300;
-			height: 72px;
-			line-height: 36px;
-			text-align: center;
-			
-			/*<!-- Background -->*/
-  			background-color: transparent; 
-  			backdrop-filter: blur(3px);
-  			-webkit-backdrop-filter: blur(3px);
-  			background-image: linear-gradient(
-    				120deg,
-    				rgba(255, 255, 255, 0.2),
-    				rgba(0, 0 ,0, 0.1)
-  			);
-		}
-		
-		.noto-music-regular {
-			/*<!-- Font -->*/
- 	 		font-family: "Noto Music", serif;
-  			font-weight: 400;
-  			font-style: normal;
-		}
+		*/
 
 		/* Main Grid */
 		.grid-container {
@@ -210,9 +136,18 @@
 		.item4 {
 			grid-area: right;
 			border: 2px solid #0099cc;
-			background-color: white;
+			
+			/*<!-- Background -->*/
+  			background-color: transparent; 
+  			backdrop-filter: blur(3px);
+  			-webkit-backdrop-filter: blur(3px);
+  			background-image: linear-gradient(
+    				120deg,
+    				rgba(255, 255, 255, 0.2),
+    				rgba(0, 0 ,0, 0.1)
+  			);
+			
 			padding: 15px;
-			color: #000000;
 		}
 		
 		.item4 > h2 {
@@ -253,7 +188,44 @@
 			.item5 {grid-area: 3 / span 6;}
 		}
 		*/
+		
+		
+		/* Header Grid */
+		
+		.grid-container-header {
+			display: grid;
+			grid-template-rows: 1fr 2fr 1fr 1fr;
+			
+			/*background-image: url('images/header-img.jpg');
+			background-repeat: no-repeat;
+  			background-size: cover;
+  			background-position: center;*/
+		}
 
+		.grid-item-header {
+			/*background-color: #39F;*/
+			text-align: center;
+			margin: 5px;
+			padding: 10px;
+
+			/*<!-- Font -->*/
+			font-size: 24px;
+			font-weight: 300;
+			height: 72px;
+			line-height: 36px;
+			text-align: center;
+		
+			/*<!-- Background -->*/
+  			background-color: transparent; 
+  			backdrop-filter: blur(3px);
+  			-webkit-backdrop-filter: blur(3px);
+  			background-image: linear-gradient(
+    				120deg,
+    				rgba(255, 255, 255, 0.2),
+    				rgba(0, 0 ,0, 0.1)
+  			);
+		}
+		
 		/* Footer Grid */
 
 		.grid-container-footer {
@@ -268,19 +240,6 @@
 		}
 
 		/* Footer List */
-		
-		.ul_container {
-			/*<!-- Layout -->*/
-			position: relative!important;
-			max-width: none;
-			margin-left: auto;
-			margin-right: auto;
-			padding-left: 40px;
-			padding-right: 40px;
-			display: flow-root;
-			box-sizing: content-box;
-			text-align: center!important;
-		}
 
 		.ul_policies {
 			list-style: none;
@@ -290,26 +249,14 @@
 			padding: 0 20px 0 20px;
 		}
 
-		/*
-		.ul_subnav {
-			
-			display: inline-flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			list-style: none;
-			padding-inline-start: 40px;
-			padding: 0;
-			margin-block-start: 1em;
-			margin-block-end: 1em;
-			margin: 0 0 20px 0;
-			margin-left: -50px;
+		/* -Reserve- */
+		.noto-music-regular {
+			/*<!-- Font -->*/
+ 	 		font-family: "Noto Music", serif;
+  			font-weight: 400;
+  			font-style: normal;
 		}
-		.ul_subnav li {
-			padding-left: 50px;
-		}
-		*/
-
+		
 	</style>
 </head>
 <body>
@@ -328,8 +275,17 @@
 				<li>Yoga</li>
 			</ul>
 		</div>
-		<div class="item2">
-			<h1>MYKINDO</h1>
+		<div class="item2 grid-container-header">
+			<!-- Header -->
+			<div class="grid-item-header"></div>
+			<!-- Title -->
+			<h1 class="grid-item-header">MYKINDO</h1>
+			<!-- Tab -->
+			<div class="grid-item-header-l0">
+				Your premium gateway to the underwater world. 
+				Connect with expert instructors, track your diving progress, and capture memories that last a lifetime.
+			</div>
+			<div class="grid-item-header-l0"></div>
 		</div>
 		<div class="item3">
 			<h2>Header</h2>
@@ -362,43 +318,6 @@
 			
 		</div>
 	</div>
-	
-	<!--
-	<div class="header">
-		<h1 class="title">MYKINDO</h1>
-		<div class="tab">
-			Your premium gateway to the underwater world. 
-			Connect with expert instructors, track your diving progress, and capture memories that last a lifetime.
-		</div>
-	</div>
-	-->
-	
-	<!-- Header -->
-	<div class="grid-container-header-l0">
-		<div class="grid-item-header-l0"></div>
-		<!-- Title -->
-		<h1 class="grid-item-header-l0">MYKINDO</h1>
-		<!-- Tab -->
-		<div class="grid-item-header-l0">
-			Your premium gateway to the underwater world. 
-			Connect with expert instructors, track your diving progress, and capture memories that last a lifetime.
-		</div>
-		<div class="grid-item-header-l0"></div>
-	</div>
-
-	<!-- Body -->
-    <div class="markdown-body" id="content"></div>
-
-	<!--
-	<div class="grid-container-l0">
-		<div class="grid-item-l0 grid-container-l1 ul_container">
-			<ul class="ul_subnav">
-				<li>text 1</li>
-				<li>text 2</li>
-			</ul>
-		</div>
-	</div>
-	-->
 	
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.3/purify.min.js"></script>
