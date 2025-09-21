@@ -14,6 +14,10 @@
 	<title>MYKINDO</title>
 	
     <style>
+		* {
+			margin: 0;
+			box-sizing: border-box;
+		}
 		
 		html {
 			/*<!-- Font -->*/
@@ -194,10 +198,132 @@
 		.ul_policies li {
 			padding: 0 20px 0 20px;
 		}
+
+
+		/* Main Grid */
+		.grid-container {
+			display: grid;
+			grid-template-areas:
+				'menu menu menu menu menu menu'
+    			'header header header header header header'
+    			'main main main main right right'
+    			'footer footer footer footer footer footer';
+			gap: 10px;
+			background-color: white;
+			padding: 10px;
+		}
+
+		.grid-container > div {
+			padding: 10px;
+		}
+		
+		.item1 {
+			grid-area: menu;
+		}
+		
+		.item1 ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.item1 li {
+			padding: 8px;
+			margin-bottom: 7px;
+			background-color: #33b5e5;
+			color: #ffffff;
+		}
+		
+		.item1 li:hover {
+			background-color: #0099cc;
+		}
+		
+		.item2 {
+			grid-area: header;
+			background-image: url('images/header-img.jpg');
+			text-align: center;
+		}
+
+		.item2 > h1 {
+			font-size: 48px;
+		}
+
+		.item3 {
+			grid-area: main;
+		}
+		
+		.item3 > h1 {
+			font-size: 30px;
+			margin-bottom: 7px;
+		}
+		
+		.item3 > p {
+			margin-bottom: 7px;
+		}
+
+		.item4 {
+			grid-area: right;
+			border: 2px solid #0099cc;
+			background-color: white;
+			padding: 15px;
+			color: #000000;
+		}
+		
+		.item4 > h2 {
+			font-size: 20px;
+			padding-bottom: 10px;
+		}
+		
+		.item4 li {
+			padding: 5px;
+			margin-bottom: 5px;
+		}
+
+		.item5 {
+			grid-area: footer;
+			background-color: #0099cc;
+			color: #ffffff;
+			text-align: center;
+		}
 		
 	</style>
 </head>
 <body>
+	<!-- Grid containing five grid items:
+		item1 = Menu,
+		item2 = Header,
+		item3 = Main content,
+		item4 = Right,
+		item5 = Footer
+	-->
+	<div class="grid-container">
+		<div class="item1">
+			<ul>
+				<li>Home</li>
+				<li>Dive</li>
+				<li>Yoga</li>
+			</ul>
+		</div>
+		<div class="item2">
+			<h1>MYKINDO</h1>
+		</div>
+		<div class="item3">
+			<!-- Body -->
+    		<div class="markdown-body" id="content"></div>
+		</div>
+		<div class="item4">
+			<h2>Dive In</h2>
+			<ul>
+				<li>Text</li>
+				<li>Link</li>
+			</ul>
+		</div>
+		<div class="item5">
+			<p>(c) MYKINDO, All rights reserved.</p>
+		</div>
+	</div>
+	
+	<!--
 	<div class="header">
 		<h1 class="title">MYKINDO</h1>
 		<div class="tab">
@@ -205,6 +331,8 @@
 			Connect with expert instructors, track your diving progress, and capture memories that last a lifetime.
 		</div>
 	</div>
+	-->
+	
 	<!-- Header -->
 	<div class="grid-container-header-l0">
 		<div class="grid-item-header-l0"></div>
@@ -218,16 +346,10 @@
 		<div class="grid-item-header-l0"></div>
 	</div>
 
+	<!-- Body -->
     <div class="markdown-body" id="content"></div>
 
-	<div class="grid-container-l0">
-		<div class="grid-item-l0 grid-container-l1 ul_container">
-			<ul class="ul_subnav">
-				<li>text 1</li>
-				<li>text 2</li>
-			</ul>
-		</div>
-	</div>
+	<!-- Footer -->
 	<div class="grid-container-footer-l0">
 		<!--/* Banner */-->
 		<div class="grid-item-footer-l0 grid-container-footer-l1">
@@ -246,7 +368,18 @@
 			</ul>
 		</div>
 	</div>
-    
+
+	<!--
+	<div class="grid-container-l0">
+		<div class="grid-item-l0 grid-container-l1 ul_container">
+			<ul class="ul_subnav">
+				<li>text 1</li>
+				<li>text 2</li>
+			</ul>
+		</div>
+	</div>
+	-->
+	
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.3/purify.min.js"></script>
     <script>
