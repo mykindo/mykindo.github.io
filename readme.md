@@ -1,5 +1,3 @@
-# Cybersecurity and everything about it
+# Creative space for Mykindo Design
 
-This repository contains some analytics associated with the subject, including various case study files.
-
-If you are interested in trying this out, just follow the examples and ask any relevant questions.
+This repository contains a website dedicated to many various ventures in which Mykindo Group explores its ideas.
